@@ -157,6 +157,7 @@ class NewTopicHandler(webapp.RequestHandler):
                 can_continue = False
         else:
             can_continue = False
+        can_continue = True
         if can_continue is False:
             return self.redirect('http://' + site.domain + '/')
         ### END: CAN CONTINUE
